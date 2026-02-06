@@ -8,12 +8,11 @@ const features = [
   { icon: Wallet, title: "Partial Payment Seat Blocking", desc: "Reserve your seat with a fraction of the fee. Pay the rest later." },
   { icon: Activity, title: "Real-Time Seat Availability", desc: "See exactly how many seats are left — updated live as admissions happen." },
   { icon: Sparkles, title: "AI-Powered Recommendations", desc: "Get personalized course and institution suggestions based on your profile." },
-  { icon: Bell, title: "Automated Notifications", desc: "Stay updated on deadlines, seat status, and application progress — automatically." },
 ];
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="section-padding bg-section-alt">
+    <section id="features" className="section-padding bg-[#1c2636]">
       <div className="container-tight">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,8 +20,8 @@ const FeaturesSection = () => {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <h2 className="mb-4">Platform Highlights</h2>
-          <p className="text-muted-foreground text-lg">
+          <h2 className="mb-4 text-white">Platform Highlights</h2>
+          <p className="text-white/70 text-lg">
             Everything you need for a smarter, faster admission experience.
           </p>
         </motion.div>
@@ -35,13 +34,13 @@ const FeaturesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.06 }}
-              className="bg-card rounded-2xl p-6 border border-border hover-lift transition-all group"
+              className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover-lift transition-all group"
             >
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
-                <item.icon size={20} className="text-accent-foreground group-hover:text-primary transition-colors" />
+              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center mb-4 transition-colors">
+                <item.icon size={20} className="text-primary-foreground transition-colors" />
               </div>
-              <h3 className="text-base font-bold text-foreground mb-1.5">{item.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+              <h3 className="text-base font-bold text-white mb-1.5">{item.title}</h3>
+              <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </div>
