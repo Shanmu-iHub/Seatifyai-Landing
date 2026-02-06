@@ -18,7 +18,7 @@ const WhyChooseSection = () => {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Why Choose SeatifyAI?</h2>
+          <h2 className="mb-4">Why Choose SeatifyAI?</h2>
           <p className="text-muted-foreground text-lg">
             We're not just another admissions portal. We're rethinking how admissions work.
           </p>
@@ -32,7 +32,7 @@ const WhyChooseSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="text-center"
+              className="text-center bg-card border border-border rounded-2xl p-6 hover-lift transition-all"
             >
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
                 <item.icon size={26} className="text-primary" />

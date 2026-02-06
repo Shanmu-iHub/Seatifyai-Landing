@@ -17,7 +17,7 @@ const WhatIsSection = () => {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">What is SeatifyAI?</h2>
+          <h2 className="mb-4">What is SeatifyAI?</h2>
           <p className="text-muted-foreground text-lg">
             SeatifyAI is a unified admission marketplace where schools, colleges, and universities list their programs — and students find, compare, and secure seats digitally. One platform, thousands of options.
           </p>
@@ -31,12 +31,12 @@ const WhatIsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow"
+              className="bg-card rounded-2xl p-8 border border-border hover-lift transition-all"
             >
               <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center mb-5">
                 <item.icon size={24} className="text-accent-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
+              <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
               <p className="text-muted-foreground">{item.desc}</p>
             </motion.div>
           ))}

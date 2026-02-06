@@ -11,7 +11,7 @@ const FinalCTASection = () => {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-background mb-4">
+          <h2 className="text-background mb-4">
             Ready to Simplify Admissions?
           </h2>
           <p className="text-background/70 text-lg mb-10">
@@ -21,14 +21,14 @@ const FinalCTASection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="https://k12.seatifyai.com"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base hover:opacity-90 transition-all"
+              className="btn-premium w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-base"
             >
               Explore School Admissions
               <ArrowRight size={18} />
             </a>
             <a
               href="https://he.seatifyai.com"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl border-2 border-background text-background font-semibold text-base hover:bg-background hover:text-foreground transition-all"
+              className="btn-premium w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl border-2 border-background text-background font-semibold text-base hover:bg-background hover:text-foreground"
             >
               Explore College Admissions
               <ArrowRight size={18} />

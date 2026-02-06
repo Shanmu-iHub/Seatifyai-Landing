@@ -11,7 +11,7 @@ const TrustSection = () => {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
+          <h2 className="mb-3">
             Built for Institutions.{" "}
             <span className="text-primary">Designed for Students.</span>
           </h2>
@@ -33,7 +33,7 @@ const TrustSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-card rounded-2xl p-7 border border-border"
+              className="bg-card rounded-2xl p-7 border border-border hover-lift transition-all"
             >
               <Quote size={24} className="text-primary/40 mb-4" />
               <p className="text-foreground text-sm leading-relaxed mb-6 italic">"{t.quote}"</p>
@@ -55,9 +55,13 @@ const TrustSection = () => {
           <p className="text-sm text-muted-foreground mb-6 uppercase tracking-wider font-medium">Trusted By Leading Institutions</p>
           <div className="flex flex-wrap items-center justify-center gap-8 opacity-40">
             {["Partner School A", "University B", "College C", "Academy D", "Institute E"].map((name) => (
-              <div key={name} className="px-6 py-3 rounded-lg bg-muted text-muted-foreground text-sm font-medium">
+              <motion.div
+                key={name}
+                whileHover={{ scale: 1.1, opacity: 1 }}
+                className="px-6 py-3 rounded-lg bg-muted text-muted-foreground text-sm font-medium cursor-pointer transition-all"
+              >
                 {name}
-              </div>
+              </motion.div>
             ))}
           </div>
         </motion.div>

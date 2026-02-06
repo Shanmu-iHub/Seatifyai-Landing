@@ -1,23 +1,23 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/Logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
-      <div className="container-tight flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+      <div className="container-tight flex items-center justify-between h-20 px-4 sm:px-6 lg:px-8">
         <a href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center font-heading font-bold text-primary-foreground text-sm">S</div>
-          <span className="font-heading font-bold text-xl text-foreground">SeatifyAI</span>
+          <img src={logo} alt="SeatifyAI Logo" className="h-10 md:h-14 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          <a href="#what" className="text-sm text-muted-foreground hover:text-foreground transition-colors">What is SeatifyAI</a>
-          <a href="#how" className="text-sm text-muted-foreground hover:text-foreground transition-colors">How It Works</a>
-          <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
-          <a href="#why" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Why Us</a>
+          <a href="#what" className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-link-hover pb-1">What is SeatifyAI</a>
+          <a href="#how" className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-link-hover pb-1">How It Works</a>
+          <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-link-hover pb-1">Features</a>
+          <a href="#why" className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-link-hover pb-1">Why Us</a>
         </div>
 
         <div className="hidden md:flex items-center gap-3">

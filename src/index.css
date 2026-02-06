@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-size: 110%;
+  }
+
   :root {
     --background: 45 30% 98%;
     --foreground: 220 25% 14%;
@@ -96,8 +100,20 @@
     @apply bg-background text-foreground font-body antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+  h1 {
+    @apply font-heading text-[3rem] leading-[1.1] font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply font-heading text-[2.5rem] leading-tight font-bold tracking-tight;
+  }
+
+  h3 {
+    @apply font-heading text-[1.75rem] leading-snug font-bold;
+  }
+
+  p {
+    @apply leading-relaxed;
   }
 }
 
@@ -105,10 +121,62 @@
   .text-balance {
     text-wrap: balance;
   }
+
   .section-padding {
     @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
   }
+
   .container-tight {
-    @apply max-w-6xl mx-auto;
+    @apply max-w-[1600px] mx-auto;
+  }
+
+  .heading-hero {
+    @apply text-[2.25rem] sm:text-[3rem] lg:text-[4rem] font-extrabold lg:font-black leading-[1.1] sm:leading-[1.05] tracking-tight;
+  }
+
+  .subheading-hero {
+    @apply text-[1.2rem] font-medium text-muted-foreground/90 leading-relaxed;
+  }
+
+  /* Interactive Utilities */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-primary/5 active:scale-[0.98];
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+
+  .btn-premium {
+    @apply relative overflow-hidden transition-all duration-300 active:scale-95 hover:brightness-110 active:brightness-90;
+  }
+
+  .btn-premium::after {
+    content: '';
+    @apply absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-300;
+  }
+
+  .btn-premium:hover::after {
+    @apply opacity-100;
+  }
+
+  .animate-slow-float {
+    animation: slow-float 6s ease-in-out infinite;
+  }
+
+  @keyframes slow-float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .nav-link-hover {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
   }
 }

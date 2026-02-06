@@ -18,7 +18,7 @@ const ProblemsSection = () => {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Key Problems We Solve</h2>
+          <h2 className="mb-4">Key Problems We Solve</h2>
           <p className="text-muted-foreground text-lg">
             Admissions shouldn't be stressful. Here's what SeatifyAI eliminates.
           </p>
@@ -32,7 +32,7 @@ const ProblemsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="flex gap-5 bg-card rounded-2xl p-7 border border-border"
+              className="flex gap-5 bg-card rounded-2xl p-7 border border-border hover-lift transition-all"
             >
               <div className="w-11 h-11 rounded-xl bg-destructive/10 flex items-center justify-center shrink-0">
                 <item.icon size={20} className="text-destructive" />

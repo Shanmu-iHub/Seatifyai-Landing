@@ -21,7 +21,7 @@ const FeaturesSection = () => {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Platform Highlights</h2>
+          <h2 className="mb-4">Platform Highlights</h2>
           <p className="text-muted-foreground text-lg">
             Everything you need for a smarter, faster admission experience.
           </p>
@@ -35,7 +35,7 @@ const FeaturesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.06 }}
-              className="bg-card rounded-2xl p-6 border border-border hover:border-primary/30 hover:shadow-md transition-all group"
+              className="bg-card rounded-2xl p-6 border border-border hover-lift transition-all group"
             >
               <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
                 <item.icon size={20} className="text-accent-foreground group-hover:text-primary transition-colors" />
