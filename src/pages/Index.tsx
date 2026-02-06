@@ -1,13 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/landing/Navbar";
+import HeroSection from "@/components/landing/HeroSection";
+import WhatIsSection from "@/components/landing/WhatIsSection";
+import WhoIsForSection from "@/components/landing/WhoIsForSection";
+import ProblemsSection from "@/components/landing/ProblemsSection";
+import HowItWorksSection from "@/components/landing/HowItWorksSection";
+import FeaturesSection from "@/components/landing/FeaturesSection";
+import EntryPathsSection from "@/components/landing/EntryPathsSection";
+import WhyChooseSection from "@/components/landing/WhyChooseSection";
+import TrustSection from "@/components/landing/TrustSection";
+import FinalCTASection from "@/components/landing/FinalCTASection";
+import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background">
+      <Navbar />
+      <HeroSection />
+      <WhatIsSection />
+      <WhoIsForSection />
+      <ProblemsSection />
+      <HowItWorksSection />
+      <FeaturesSection />
+      <EntryPathsSection />
+      <WhyChooseSection />
+      <TrustSection />
+      <FinalCTASection />
+      <Footer />
+    </main>
   );
 };
 
