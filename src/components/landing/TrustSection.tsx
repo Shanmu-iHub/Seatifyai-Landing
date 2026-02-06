@@ -45,26 +45,7 @@ const TrustSection = () => {
           ))}
         </div>
 
-        {/* Partner logos placeholder */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <p className="text-sm text-muted-foreground mb-6 uppercase tracking-wider font-medium">Trusted By Leading Institutions</p>
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-40">
-            {["Partner School A", "University B", "College C", "Academy D", "Institute E"].map((name) => (
-              <motion.div
-                key={name}
-                whileHover={{ scale: 1.1, opacity: 1 }}
-                className="px-6 py-3 rounded-lg bg-muted text-muted-foreground text-sm font-medium cursor-pointer transition-all"
-              >
-                {name}
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+
       </div>
     </section>
   );
