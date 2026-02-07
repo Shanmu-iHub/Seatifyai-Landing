@@ -8,24 +8,24 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
-      <div className="container-tight flex items-center justify-between h-20 px-4 sm:px-6 lg:px-8">
+      <div className="container-tight flex items-center justify-between h-24 px-4 sm:px-6 lg:px-8">
         <a href="/" className="flex items-center gap-2">
-          <img src={logo} alt="SeatifyAI Logo" className="h-10 md:h-14 w-auto" />
+          <img src={logo} alt="SeatifyAI Logo" className="h-14 md:h-[78px] w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          <a href="#what" className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-link-hover pb-1">What is SeatifyAI</a>
-          <a href="#how" className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-link-hover pb-1">How It Works</a>
-          <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-link-hover pb-1">Features</a>
-          <a href="#why" className="text-sm text-muted-foreground hover:text-foreground transition-colors nav-link-hover pb-1">Why Us</a>
+          <a href="#what" className="text-[17px] leading-[25.5px] font-medium text-black hover:text-primary transition-colors nav-link-hover pb-1">What is SeatifyAI</a>
+          <a href="#how" className="text-[17px] leading-[25.5px] font-medium text-black hover:text-primary transition-colors nav-link-hover pb-1">How It Works</a>
+          <a href="#features" className="text-[17px] leading-[25.5px] font-medium text-black hover:text-primary transition-colors nav-link-hover pb-1">Features</a>
+          <a href="#why" className="text-[17px] leading-[25.5px] font-medium text-black hover:text-primary transition-colors nav-link-hover pb-1">Why Us</a>
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="https://k12.seatifyai.com" className="text-sm font-medium px-4 py-2 rounded-lg border border-border hover:bg-accent transition-colors text-foreground">
+          <a href="https://k12.seatifyai.com" className="text-[15px] font-semibold px-5 py-2.5 rounded-xl bg-black text-white hover:bg-black/90 transition-all active:scale-95">
             School Admissions
           </a>
-          <a href="https://he.seatifyai.com" className="text-sm font-medium px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-opacity">
-            College Admissions
+          <a href="https://he.seatifyai.com" className="text-[15px] font-semibold px-5 py-2.5 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition-all active:scale-95">
+            Higher Education Admissions
           </a>
         </div>
 
@@ -43,13 +43,13 @@ const Navbar = () => {
             className="md:hidden border-t border-border bg-background overflow-hidden"
           >
             <div className="px-4 py-4 flex flex-col gap-3">
-              <a href="#what" onClick={() => setOpen(false)} className="text-sm py-2 text-muted-foreground">What is SeatifyAI</a>
-              <a href="#how" onClick={() => setOpen(false)} className="text-sm py-2 text-muted-foreground">How It Works</a>
-              <a href="#features" onClick={() => setOpen(false)} className="text-sm py-2 text-muted-foreground">Features</a>
-              <a href="#why" onClick={() => setOpen(false)} className="text-sm py-2 text-muted-foreground">Why Us</a>
+              <a href="#what" onClick={() => setOpen(false)} className="text-[17px] leading-[25.5px] font-medium py-2 text-black">What is SeatifyAI</a>
+              <a href="#how" onClick={() => setOpen(false)} className="text-[17px] leading-[25.5px] font-medium py-2 text-black">How It Works</a>
+              <a href="#features" onClick={() => setOpen(false)} className="text-[17px] leading-[25.5px] font-medium py-2 text-black">Features</a>
+              <a href="#why" onClick={() => setOpen(false)} className="text-[17px] leading-[25.5px] font-medium py-2 text-black">Why Us</a>
               <div className="flex flex-col gap-2 pt-2">
-                <a href="https://k12.seatifyai.com" className="text-sm font-medium text-center px-4 py-2.5 rounded-lg border border-border text-foreground">School Admissions</a>
-                <a href="https://he.seatifyai.com" className="text-sm font-medium text-center px-4 py-2.5 rounded-lg bg-primary text-primary-foreground">College Admissions</a>
+                <a href="https://k12.seatifyai.com" className="text-[17px] font-semibold text-center px-4 py-3 rounded-xl bg-black text-white">School Admissions</a>
+                <a href="https://he.seatifyai.com" className="text-[17px] font-semibold text-center px-4 py-3 rounded-xl bg-primary text-primary-foreground">Higher Education Admissions</a>
               </div>
             </div>
           </motion.div>

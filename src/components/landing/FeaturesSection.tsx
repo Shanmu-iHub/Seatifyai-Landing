@@ -12,7 +12,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="section-padding bg-[#1c2636]">
+    <section id="features" className="py-24 bg-[#060c17]">
       <div className="container-tight">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

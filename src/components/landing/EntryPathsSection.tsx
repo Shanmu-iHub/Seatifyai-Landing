@@ -54,7 +54,7 @@ const EntryPathsSection = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative bg-foreground rounded-2xl p-8 md:p-10 overflow-hidden group"
+            className="relative bg-[#060c17] rounded-2xl p-8 md:p-10 border border-white/10 overflow-hidden group hover:border-primary transition-all"
           >
             <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2" />
             <div className="relative">
