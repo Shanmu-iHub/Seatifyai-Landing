@@ -17,7 +17,7 @@ const Navbar = () => {
           <a href="#what" className="text-[17px] leading-[25.5px] font-medium text-black hover:text-primary transition-colors nav-link-hover pb-1">What is SeatifyAI</a>
           <a href="#how" className="text-[17px] leading-[25.5px] font-medium text-black hover:text-primary transition-colors nav-link-hover pb-1">How It Works</a>
           <a href="#features" className="text-[17px] leading-[25.5px] font-medium text-black hover:text-primary transition-colors nav-link-hover pb-1">Features</a>
-          <a href="#why" className="text-[17px] leading-[25.5px] font-medium text-black hover:text-primary transition-colors nav-link-hover pb-1">Why Us</a>
+          <a href="#testimonials" className="text-[17px] leading-[25.5px] font-medium text-black hover:text-primary transition-colors nav-link-hover pb-1">Testimonials</a>
         </div>
 
         <div className="hidden md:flex items-center gap-3">
@@ -46,7 +46,7 @@ const Navbar = () => {
               <a href="#what" onClick={() => setOpen(false)} className="text-[17px] leading-[25.5px] font-medium py-2 text-black">What is SeatifyAI</a>
               <a href="#how" onClick={() => setOpen(false)} className="text-[17px] leading-[25.5px] font-medium py-2 text-black">How It Works</a>
               <a href="#features" onClick={() => setOpen(false)} className="text-[17px] leading-[25.5px] font-medium py-2 text-black">Features</a>
-              <a href="#why" onClick={() => setOpen(false)} className="text-[17px] leading-[25.5px] font-medium py-2 text-black">Why Us</a>
+              <a href="#testimonials" onClick={() => setOpen(false)} className="text-[17px] leading-[25.5px] font-medium py-2 text-black">Testimonials</a>
               <div className="flex flex-col gap-2 pt-2">
                 <a href="https://k12.seatifyai.com" className="text-[17px] font-semibold text-center px-4 py-3 rounded-xl bg-black text-white">School Admissions</a>
                 <a href="https://he.seatifyai.com" className="text-[17px] font-semibold text-center px-4 py-3 rounded-xl bg-primary text-primary-foreground">Higher Education Admissions</a>

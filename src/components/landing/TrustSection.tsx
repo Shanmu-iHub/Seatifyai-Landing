@@ -56,7 +56,7 @@ const TrustSection = () => {
   const scrollingTestimonials = [...testimonials, ...testimonials, ...testimonials];
 
   return (
-    <section className="py-24 overflow-hidden bg-section-alt/30">
+    <section id="testimonials" className="py-24 overflow-hidden bg-section-alt/30">
       <div className="container-tight mb-16 px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
