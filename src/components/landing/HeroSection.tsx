@@ -17,7 +17,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5 }}
             >
               <span className="inline-block px-5 py-2 rounded-full bg-accent text-accent-foreground text-base font-semibold mb-6">
-                Digital Admission Marketplace
+              Digital Admission Marketplace
               </span>
             </motion.div>
 
@@ -38,7 +38,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="subheading-hero mb-10 text-balance"
             >
-              SeatifyAI simplifies admissions for schools, colleges, parents, and students — from discovery to seat confirmation, all in one place.
+              Seatify is the world’s first true Admission Marketplace for K-12 schools, colleges, and universities, unifying fragmented admission journeys into a single, transparent digital experience.
             </motion.p>
 
             <motion.div
