@@ -8,9 +8,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
-      <div className="container-tight flex items-center justify-between h-24 px-4 sm:px-6 lg:px-8">
+      <div className="container-tight flex items-center justify-between h-20 md:h-24 px-4 sm:px-6 lg:px-8">
         <a href="/" className="flex items-center gap-2">
-          <img src={logo} alt="SeatifyAI Logo" className="h-14 md:h-[78px] w-auto" />
+          <img src={logo} alt="SeatifyAI Logo" className="h-12 md:h-[78px] w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">

@@ -93,10 +93,10 @@ const TrustSection = () => {
           {scrollingTestimonials.map((t, i) => (
             <div
               key={i}
-              className="flex-shrink-0 w-[450px] mr-6 bg-white border border-border/60 rounded-[28px] p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_35px_rgb(0,0,0,0.08)] transition-all whitespace-normal"
+              className="flex-shrink-0 w-[300px] sm:w-[400px] md:w-[450px] mr-6 bg-white border border-border/60 rounded-[28px] p-8 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_35px_rgb(0,0,0,0.08)] transition-all whitespace-normal"
             >
               {/* Top part: Logo and Tagline */}
-              <div className="mb-8">
+              <div className="mb-6 sm:mb-8">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary font-bold">
                     {t.logo[0]}

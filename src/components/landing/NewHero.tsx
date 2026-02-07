@@ -51,9 +51,9 @@ const FloatingCard = ({ name, role, count, logo, delay = 0, className = "" }: Fl
 
 const NewHero = () => {
     return (
-        <section className="relative pt-24 pb-12 overflow-hidden">
-            {/* Main Curved Container */}
-            <div className="w-[90%] mx-auto relative rounded-[40px] md:rounded-[60px] overflow-hidden bg-[#0F172A] min-h-[700px] md:min-h-[750px] flex items-center justify-center border border-white/5">
+        <section className="relative pt-20 md:pt-24 pb-12 overflow-hidden">
+            {/* Main Container - Full width on mobile, curved on desktop */}
+            <div className="w-full md:w-[90%] mx-auto relative rounded-none md:rounded-[60px] overflow-hidden bg-[#0F172A] min-h-[600px] md:min-h-[750px] flex items-center justify-center border-b md:border border-white/5">
 
                 {/* High-Impact Cosmic Flux - Full Width & High Opacity */}
                 <div className="absolute inset-0 z-0 bg-[#060B16] overflow-hidden">
@@ -138,10 +138,10 @@ const NewHero = () => {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8"
+                        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 max-w-full"
                     >
-                        <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                        <span className="text-white/80 text-sm font-semibold tracking-wide uppercase">
+                        <div className="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0" />
+                        <span className="text-white/80 text-[10px] sm:text-sm font-semibold tracking-wide uppercase whitespace-nowrap">
                             World's First Digital Admission Marketplace
                         </span>
                     </motion.div>
@@ -151,10 +151,10 @@ const NewHero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.1 }}
-                        className="text-[2.25rem] md:text-[3.5rem] lg:text-[5rem] font-bold leading-[1.1] tracking-tight text-white mb-8 max-w-5xl"
+                        className="text-[2.5rem] sm:text-[3.5rem] lg:text-[5rem] font-bold leading-[1.1] tracking-tight text-white mb-8 max-w-5xl"
                     >
                         One Platform <br className="hidden md:block" />
-                        <span className="whitespace-nowrap">
+                        <span className="flex flex-col sm:block lg:inline sm:whitespace-nowrap">
                             <span className="text-primary italic">One Process.</span> Zero Hassle.
                         </span>
                     </motion.h1>
@@ -164,7 +164,7 @@ const NewHero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
-                        className="text-white/60 text-lg md:text-xl leading-relaxed max-w-3xl mb-12"
+                        className="text-white/60 text-[15px] md:text-xl leading-relaxed max-w-3xl mb-12"
                     >
                         Seatify brings K–12 schools, colleges, and universities onto a single admission platform, replacing fragmented processes with one clear, transparent digital journey.
                     </motion.p>
