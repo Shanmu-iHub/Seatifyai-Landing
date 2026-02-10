@@ -151,12 +151,11 @@ const NewHero = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.1 }}
-                        className="text-[2.5rem] sm:text-[3.5rem] lg:text-[5rem] font-bold leading-[1.1] tracking-tight text-white mb-8 max-w-5xl"
+                        className="text-[2.5rem] sm:text-[3.5rem] lg:text-[4rem] font-bold leading-[1.1] tracking-tight text-white mb-8 max-w-6xl"
                     >
-                        One Platform <br className="hidden md:block" />
-                        <span className="flex flex-col sm:block lg:inline sm:whitespace-nowrap">
-                            <span className="text-primary italic">One Process.</span> Zero Hassle.
-                        </span>
+                        One Unified Marketplace <br className="hidden md:block" />
+                        for K12 to UG & PG Admissions. <br className="hidden md:block" />
+                        <span className="text-primary italic">Zero Hassle with AI Process.</span>
                     </motion.h1>
 
                     {/* Centered Subheading */}
