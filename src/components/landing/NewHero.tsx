@@ -1,53 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Star, Users, GraduationCap } from "lucide-react";
-
-interface FloatingCardProps {
-    name: string;
-    role: string;
-    count: string;
-    logo: React.ReactNode;
-    delay?: number;
-    className?: string;
-}
-
-const FloatingCard = ({ name, role, count, logo, delay = 0, className = "" }: FloatingCardProps) => (
-    <motion.div
-        initial={{ opacity: 0, scale: 0.8, y: 20 }}
-        animate={{
-            opacity: 1,
-            scale: 1,
-            y: [0, -10, 0],
-        }}
-        transition={{
-            opacity: { duration: 0.5, delay },
-            scale: { duration: 0.5, delay },
-            y: {
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: delay + 0.5
-            }
-        }}
-        className={`absolute z-20 bg-[#1c2636]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-4 shadow-2xl min-w-[220px] ${className}`}
-    >
-        <div className="flex items-start gap-3">
-            <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary shrink-0">
-                {logo}
-            </div>
-            <div className="flex-1">
-                <div className="flex items-center gap-1.5 mb-0.5">
-                    <h4 className="text-white font-bold text-sm tracking-tight">{name}</h4>
-                    <CheckCircle2 size={14} className="text-blue-400 fill-blue-400/20" />
-                </div>
-                <p className="text-white/60 text-[11px] font-medium uppercase tracking-wider mb-2">{role}</p>
-                <div className="flex items-center gap-1.5 bg-white/5 rounded-full px-2 py-0.5 w-fit">
-                    <span className="text-primary font-bold text-[10px]">{count}</span>
-                    <span className="text-white/40 text-[9px] font-medium uppercase tracking-widest">Enrolled</span>
-                </div>
-            </div>
-        </div>
-    </motion.div>
-);
+import { ArrowRight } from "lucide-react";
 
 const NewHero = () => {
     return (
@@ -190,41 +142,6 @@ const NewHero = () => {
                             <ArrowRight size={22} />
                         </a>
                     </motion.div>
-
-                    {/* Floating Cards (Uplers Style) */}
-                    <FloatingCard
-                        name="SN Academy"
-                        role="K12 PREMIUM"
-                        count="2.4K+"
-                        logo={<Users size={24} />}
-                        delay={0.4}
-                        className="top-[15%] left-[5%] hidden xl:block"
-                    />
-                    <FloatingCard
-                        name="Global University"
-                        role="UNIVERSITY"
-                        count="15K+"
-                        logo={<GraduationCap size={24} />}
-                        delay={0.6}
-                        className="bottom-[20%] left-[8%] hidden lg:block"
-                    />
-                    <FloatingCard
-                        name="Modern School"
-                        role="K12 SCHOOL"
-                        count="1.2K+"
-                        logo={<Star size={24} />}
-                        delay={0.8}
-                        className="top-[25%] right-[5%] hidden xl:block"
-                    />
-                    <FloatingCard
-                        name="Institute of Tech"
-                        role="ENGINEERING"
-                        count="8.5K+"
-                        logo={<GraduationCap size={24} />}
-                        delay={1}
-                        className="bottom-[15%] right-[10%] hidden lg:block"
-                    />
-
                 </div>
             </div>
         </section>
