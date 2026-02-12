@@ -24,7 +24,7 @@ const Navbar = () => {
           <a href="https://k12.seatifyai.com" className="text-[15px] font-semibold px-5 py-2.5 rounded-xl bg-black text-white hover:bg-black/90 transition-all active:scale-95">
             School Admissions
           </a>
-          <a href="https://he.seatifyai.com" className="text-[15px] font-semibold px-5 py-2.5 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition-all active:scale-95">
+          <a href="https://he.velzx.com" className="text-[15px] font-semibold px-5 py-2.5 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition-all active:scale-95">
             Higher Education Admissions
           </a>
         </div>
