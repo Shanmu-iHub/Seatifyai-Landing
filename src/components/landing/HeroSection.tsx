@@ -17,7 +17,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5 }}
             >
               <span className="inline-block px-5 py-2 rounded-full bg-accent text-accent-foreground text-base font-semibold mb-6">
-              Digital Admission Marketplace
+                Digital Admission Marketplace
               </span>
             </motion.div>
 
@@ -48,14 +48,14 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row items-center gap-4"
             >
               <a
-                href="https://k12.seatifyai.com"
+                href="https://k12.velzx.com"
                 className="btn-premium w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-bold text-lg shadow-lg shadow-primary/20"
               >
                 School Admissions
                 <ArrowRight size={20} />
               </a>
               <a
-                href="https://he.seatifyai.com"
+                href="https://he.velzx.com"
                 className="btn-premium w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border-2 border-foreground text-foreground font-bold text-lg hover:bg-foreground hover:text-background"
               >
                 College & University Admissions

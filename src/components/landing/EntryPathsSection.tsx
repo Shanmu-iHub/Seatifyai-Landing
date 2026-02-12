@@ -40,7 +40,7 @@ const EntryPathsSection = () => {
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary" /> Simple, parent-first experience</li>
               </ul>
               <a
-                href="https://k12.seatifyai.com"
+                href="https://k12.velzx.com"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
               >
                 Explore School Admissions
@@ -71,7 +71,7 @@ const EntryPathsSection = () => {
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary" /> Cross-university course comparison</li>
               </ul>
               <a
-                href="https://he.seatifyai.com"
+                href="https://he.velzx.com"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
               >
                 Explore College Admissions
